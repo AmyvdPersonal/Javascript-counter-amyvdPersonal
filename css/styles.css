@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background: #eacda3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d6ae7b, #eacda3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wrapper__counter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.counter__container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+
+    background-color:#ffff;
+    min-height:50rem;
+    min-width:40rem;
+    border-radius: 3rem;
+    padding:2rem;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.counter__value{
+    font-size:15rem;
+}
+
+.counter__buttons{
+    display:flex;
+    gap:1.5rem;
+}
+
+.counter__button{
+    border:none;
+    padding:1rem 3rem;
+    font-size:110%;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+
+.counter__button:hover{
+    box-shadow: 
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform:scale(1.1);
+}
+
+.button__decrease{
+    background-color:#FF6464;/*background-color : red;*/
+}
+
+.button__decrease:hover{
+    background-color:#ff6464ba;
+}
+
+.button__reset{
+    background-color:#FFE6AB;
+}
+
+.button__increase{
+    background-color:#98D8AA;/*background-color : green;*/
+}
+
+.button__increase:hover{
+    background-color:#98d8aa94;/*background-color : green;*/
+}
+
+
+@media only screen and (max-width: 1024px){
+    .wrapper__counter{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .counter__container{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap:5rem;
+    
+        background-color:#ffff;
+        min-height:20rem;
+        max-height:50rem;
+        min-width:25rem;
+        max-width:25rem;
+        border-radius: 3rem;
+        padding:2rem;
+    
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    
+    .counter__value{
+        font-size:15rem;
+    }
+    
+    .counter__buttons{
+        display:flex;
+        gap:1.5rem;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+    
+    .counter__button{
+        border:none;
+        padding:1rem 3rem;
+        font-size:100%;
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.5s;
+    }
+
+}
